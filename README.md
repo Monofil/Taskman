@@ -3,7 +3,7 @@
 Taskmanは、個人利用向けのローカル完結型ビジュアルタスク管理デスクトップアプリです。TaskをTimeline、Kanban、WBSで可視化し、Project、依存関係、進捗、期限超過をSQLiteで管理します。
 
 > [!WARNING]
-> v0.1.0は未署名のPre-release（個人検証用）です。安定版・正式配布版ではありません。Microsoft Defender SmartScreenまたはSmart App Controlにより警告・ブロックされる場合があります。
+> v0.1.0は未署名の個人検証用Releaseです。安定版・正式配布版ではありません。Microsoft Defender SmartScreenまたはSmart App Controlにより警告・ブロックされる場合があります。
 
 ## ダウンロード
 
