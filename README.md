@@ -3,24 +3,25 @@
 Taskmanは、個人利用向けのローカル完結型ビジュアルタスク管理デスクトップアプリです。TaskをTimeline、Kanban、WBSで可視化し、Project、依存関係、進捗、期限超過をSQLiteで管理します。
 
 > [!WARNING]
-> v0.2.0はAuthenticode未署名です。Microsoft Defender SmartScreenまたはSmart App Controlにより警告・ブロックされる場合があります。Windowsの保護機能を無効化して実行しないでください。
+> v0.3.0はAuthenticode未署名です。Microsoft Defender SmartScreenまたはSmart App Controlにより警告・ブロックされる場合があります。Windowsの保護機能を無効化して実行しないでください。
 
 ## ダウンロード
 
 - [最新版のRelease](https://github.com/Monofil/Taskman/releases/latest)
-- [Windows 11 x64 通常版](https://github.com/Monofil/Taskman/releases/latest/download/Taskman-v0.2.0-windows-x64.zip) — 推奨。NSIS installerとWebView2オフラインinstallerを含みます。
-- [Windows 11 x64 standalone版](https://github.com/Monofil/Taskman/releases/latest/download/Taskman-v0.2.0-windows-x64-standalone.zip) — WebView2 Runtime導入済み環境向け。
+- [Windows 11 x64 通常版](https://github.com/Monofil/Taskman/releases/latest/download/Taskman-v0.3.0-windows-x64.zip) — 推奨。NSIS installerとWebView2 offline installerを含みます。
+- [Windows 11 x64 standalone版](https://github.com/Monofil/Taskman/releases/latest/download/Taskman-v0.3.0-windows-x64-standalone.zip) — WebView2 Runtime導入済み環境向け。
 
 GitHubが自動表示する`Source code (zip)`は、この配布用リポジトリのREADME等をまとめたものであり、Taskmanアプリ本体ではありません。必ずReleaseの`Assets`から上記の配布ZIPを取得してください。
 
-## v0.2.0の主な変更
+## v0.3.0の主な変更
 
-- Settingsから担当者機能をON／OFF（更新後の初期値はOFF）
-- 担当者マスタとProjectごとの担当者候補設定
-- WBSの実Taskへ最大3名を割当
-- KanbanカードとTask詳細の担当者表示
-- Kanbanの複数担当者＋未割当OR filter
-- SQLite schema `0003`。v0.1.0のschema `0002`から既存データを保持して更新
+- Timelineを開始日基準で配置し、月見出し位置と表示期間外Taskの扱いを改善
+- Kanbanカードに直属の親Taskを常時表示し、テーマに合わせた背景へ調整
+- Task詳細で全祖先階層を確認し、祖先Taskへ移動可能
+- WBSのProject／Task階層開閉、全展開／全折りたたみ、単一セルコピー・貼り付け
+- WBS編集時の`Enter`、`Escape`、備考の`Alt+Enter`操作を整理
+- Settingsの担当者一覧を開閉可能
+- SQLite schemaは`0003`のまま。v0.2.0のProject、Task、設定、担当者データを保持して更新
 
 ## 対応環境
 
@@ -42,7 +43,7 @@ Task、Project、Settings等は端末内の次の場所に保存されます。T
 
 ## 署名とハッシュ
 
-v0.2.0は未署名です。Release notesと各ZIP内の`SHA256SUMS.txt`を確認し、取得元とSHA-256が一致することを確認してください。SHA-256は改ざん検知に利用できますが、コード署名の代わりにはなりません。
+v0.3.0は未署名です。Release notesと各ZIP内の`SHA256SUMS.txt`を確認し、取得元とSHA-256が一致することを確認してください。SHA-256は改ざん検知に利用できますが、コード署名の代わりにはなりません。
 
 ## リポジトリについて
 
